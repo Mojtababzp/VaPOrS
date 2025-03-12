@@ -35,4 +35,4 @@ Users must edit it  by inserting the SMILES of interest (one SMILES notation per
 After running the notebook, the following files will be created (or updated) in the same directory, containing the employed SMILES with the occurrence of functional groups, vapor Pressure (Pa) and Enthalpy of Vaporization (kJ/mol) at the given temperature (298.15 by default) and temperature-based vapor Pressure (log P in atm) and Enthalpy of Vaporization (Delta_h in kJ/mol) for them in each row:
 output.csv
 output.txt
-These files already exist in the repository as the outputs of the example for guidance.
+These files already exist in the directory as the outputs of the example for guidance.
