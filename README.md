@@ -1,38 +1,47 @@
 # VaPOrS: Vapor Pressure & Enthalpy of Vaporization Calculation from SMILES  
 
-**VaPOrS** is a Jupyter Notebook tool that:  
-- **Identifies and quantifies 30 functional groups** in organic compounds from their **SMILES notation**.  
-- **Calculates vapor pressure and enthalpy of vaporization** using the **SIMPOL method**.  
-- **Outputs results in `output.csv` and `output.txt`**.  
+A Python-based tool that takes a list of compounds in SMILES format, detects the presence and quantity of 30 structural groups based on the SIMPOL method and calculates their vapor pressure and enthalpy of vaporization.
 
 ---
 
 ## **Installation & Setup**  
 
-1. clone the repository
+1. Clone the Repository
 First, download the repository to your local machine:  
 ```sh
 git clone https://github.com/Mojtababzp/VaPOrS.git  
 cd VaPOrS
+
 2. Install Dependencies
 Ensure Python (≥3.8) is installed, then install the required libraries:
-
-sh
+```sh
 pip install numpy scipy
- 
-Alternatively, if running inside Jupyter Notebook, execute:
-!pip install numpy scipy
 
-3. Open and Run the Jupyter Notebook
+3. Run the Code
+- Option A: Use Jupyter Notebook
 To launch Jupyter Notebook and open VaPOrS.ipynb, run:
+```sh
 jupyter notebook  
 Then navigate to VaPOrS.ipynb and execute all cells.
+- Option B: Use the Python Script
+To run the code directly via terminal using VaPOrS.py, simply run:
+```sh
+python VaPOrS.py
 
-Usage
+Make sure SMILES.txt is present in the directory before execution.
+
 Input File (SMILES.txt)
-The input file already exists in the repository with several SMILES in each row as an example.
-Users must edit it  by inserting the SMILES of interest (one SMILES notation per line, without headers).
-After running the notebook, the following files will be created (or updated) in the same directory, containing the employed SMILES with the occurrence of functional groups, vapor Pressure (Pa) and Enthalpy of Vaporization (kJ/mol) at the given temperature (298.15 by default) and temperature-based vapor Pressure (log P in atm) and Enthalpy of Vaporization (Delta_h in kJ/mol) for them in each row:
-output.csv
-output.txt
-These files already exist in the directory as the outputs of the example for guidance.
+The input file already exists in the repository with several SMILES in each row as examples.
+Edit this file to insert your own SMILES notations (one SMILES per line, no headers).
+
+Output Files
+After execution, the following output files will be created or updated in the same directory:
+output.csv: Tabular output containing structural groups, vapor pressure (Pa), and enthalpy of vaporization (kJ/mol).
+output.txt: Text output summarizing the same information in a readable format.
+These files already exist in the directory as an example output for guidance.
+
+Citation
+If you use this tool in your research, please cite:
+Mojtababzp. (2025). Mojtababzp/VaPOrS: VaPOrS v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.15213275
+
+
