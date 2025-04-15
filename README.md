@@ -42,6 +42,6 @@ These files already exist in the directory as an example output for guidance.
 
 Citation
 If you use this tool in your research, please cite:
-Mojtababzp. (2025). Mojtababzp/VaPOrS: VaPOrS v1.0.0 (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.15213275
+Mojtaba Bezaatpour. (2025). Mojtababzp/VaPOrS: VaPOrS v1.0.1 (v.1.0.1). Zenodo. https://doi.org/10.5281/zenodo.15222175
 
 
